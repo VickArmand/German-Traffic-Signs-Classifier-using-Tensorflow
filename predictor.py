@@ -13,7 +13,7 @@ def predict_with_model(model,imgpath):
     predictions=np.argmax(predictions)
     return predictions
 if __name__=="__main__":
-    img_path="C:\\Users\\VICKFURY\\Documents\\projects\\Python Scripts\\ml\\ml codes\\supervised\\INTRODUCTION TO TENSORFLOW FOR COMPUTER VISION\\traffic signs\\Datasets\\Model Training Data\\Test\\18\\01512.png"
+    img_path="C:\\Users\\VICKFURY\\Documents\\projects\\Python Scripts\\ml\\ml codes\\supervised\\INTRODUCTION TO TENSORFLOW FOR COMPUTER VISION\\traffic signs\\Datasets\\Model Training Data\\Test\\18\\00006.png"
     model=tf.keras.models.load_model('./models')
     prediction=predict_with_model(model, img_path)
     print(f"Resulting prediction for the image is that it belongs to class : {prediction} " )
